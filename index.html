@@ -4,11 +4,26 @@
     <meta charset="UTF-8" />
     <title>Jen's Blog</title>
     <link rel="icon" href="./assets/images/icon.PNG" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+      }
+      html,
+      body {
+        font-family: "Noto Serif TC", serif;
+      }
+
+      p,
+      li {
+        font-weight: 500;
       }
     </style>
   </head>
@@ -96,7 +111,7 @@
           class="mainTopicText"
           style="flex: 500px; position: relative; left: 4rem"
         >
-          <h2 class="subTitle" style="font-size: 6rem">2021 的今天</h2>
+          <h2 class="subTitle" style="font-size: 6rem">Back to 2021</h2>
           <p
             class="paragraph"
             style="font-size: 1.25rem; width: 80%; line-height: 1.5"
@@ -111,6 +126,7 @@
       </section>
       <!-- 本月推薦 -->
       <section class="recommand">
+        <!-- 電影 -->
         <section
           class="recommand-movie"
           style="
@@ -143,56 +159,251 @@
             </p>
           </div>
         </section>
+        <!-- 音樂 -->
+        <section
+          class="recommand-movie"
+          style="
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <div style="flex: 500px; text-align: center">
+            <iframe
+              data-testid="embed-iframe"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/6s1FrTI6HEieYxcRLjiRVx?utm_source=generator"
+              width="400"
+              height="600"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          <div class="mainTopicText" style="flex: 500px">
+            <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
+              本月歌單推薦
+            </h3>
+            <ul
+              style="
+                font-size: 1.25rem;
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                line-height: 1.5;
+              "
+            >
+              <li>
+                信 —
+                歷經十年的重製雖書寫角度改變但仍能看出過去與現今的迷惘與成長
+              </li>
+              <li>
+                不哭 —
+                曾經只唱低俗下流歌詞的歌手轉為感受生活的嘻哈詩人，唱腔雖非主流但內容真摯值得一聽
+              </li>
+              <li>
+                阿姆般的生活 —
+                想成為一個負責任能陪伴小孩成長的大人，韓森用著有趣的punchline道出他的嘻哈生活
+              </li>
+            </ul>
+          </div>
+        </section>
       </section>
-      <section
-        class="recommand-movie"
+      <!-- 日誌 -->
+      <!-- <section
+        class="journal"
         style="
-          min-height: 100vh;
           display: flex;
+          flex-direction: column;
+          gap: 2rem;
           align-items: center;
-          justify-content: center;
+          background-color: #fff;
+          min-height: 100vh;
         "
       >
-        <div style="flex: 500px; text-align: center">
-          <iframe
-            data-testid="embed-iframe"
-            style="border-radius: 12px"
-            src="https://open.spotify.com/embed/playlist/6s1FrTI6HEieYxcRLjiRVx?utm_source=generator"
-            width="400"
-            height="600"
-            frameborder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          ></iframe>
-        </div>
-
-        <div class="mainTopicText" style="flex: 500px">
-          <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
-            本月歌單推薦
-          </h3>
-          <ul
+        <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
+          本月日誌
+        </h3>
+        <div
+          class="cards"
+          style="
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(auto, 1fr);
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+          "
+        >
+          <div
+            class="card"
             style="
-              font-size: 1.25rem;
-              width: 80%;
-              display: flex;
-              flex-direction: column;
-              gap: 1.5rem;
-              line-height: 1.5;
+              position: relative;
+              background-color: #fff;
+              border: 1px solid #564734;
+              width: 300px;
             "
           >
-            <li>
-              信 — 歷經十年的重製雖書寫角度改變但仍能看出過去與現今的迷惘與成長
-            </li>
-            <li>
-              不哭 —
-              曾經只唱低俗下流歌詞的歌手轉為感受生活的嘻哈詩人，唱腔雖非主流但內容真摯值得一聽
-            </li>
-            <li>
-              阿姆般的生活 —
-              想成為一個負責任的大人一個能陪伴小孩成長的大人，用著有趣的punchline道出他的嘻哈生活
-            </li>
-          </ul>
+            <div class="top" style="height: 150px">
+              <img
+                src="./assets/images/sky-1.jpg"
+                alt=""
+                style="width: 100%; height: 100%"
+              />
+            </div>
+            <div class="bottom">
+              <h2 class="day">25</h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                voluptatibus reprehenderit a vel perferendis optio est vitae
+                perspiciatis amet consectetur!
+              </p>
+            </div>
+          </div>
+          <div
+            class="card"
+            style="
+              position: relative;
+              background-color: #fff;
+              border: 1px solid #564734;
+              width: 300px;
+            "
+          >
+            <div class="top" style="height: 150px">
+              <img
+                src="./assets/images/sky-1.jpg"
+                alt=""
+                style="width: 100%; height: 100%"
+              />
+            </div>
+            <div class="bottom">
+              <h2 class="day">25</h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                voluptatibus reprehenderit a vel perferendis optio est vitae
+                perspiciatis amet consectetur!
+              </p>
+            </div>
+          </div>
+          <div
+            class="card"
+            style="
+              position: relative;
+              background-color: #fff;
+              border: 1px solid #564734;
+              width: 300px;
+            "
+          >
+            <div class="top" style="height: 150px">
+              <img
+                src="./assets/images/sky-1.jpg"
+                alt=""
+                style="width: 100%; height: 100%"
+              />
+            </div>
+            <div class="bottom">
+              <h2 class="day">25</h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                voluptatibus reprehenderit a vel perferendis optio est vitae
+                perspiciatis amet consectetur!
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          style="
+            border: 1px solid #564734;
+            border-radius: 60px;
+            padding: 0.5rem 2rem;
+            font-size: 1.25rem;
+          "
+        >
+          Learn More
+        </button>
+      </section> -->
+      <!-- 訂閱 -->
+      <section
+        class="subscribe"
+        style="
+          background-color: #564734;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 1rem;
+          width: 60%;
+          margin: 0 auto;
+          margin-block: 5rem;
+          overflow: hidden;
+        "
+      >
+        <div class="left" style="flex: 40%">
+          <img
+            src="./assets/images/subscribeBg.jpg"
+            alt=""
+            style="width: 100%"
+          />
+        </div>
+        <div
+          class="right"
+          style="
+            flex: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding-inline: 1rem;
+            text-align: center;
+            color: #fff;
+          "
+        >
+          <h3 class="subTitle" style="font-size: 2rem">
+            訂閱我取得最新的生活日誌
+          </h3>
+          <p class="paragraph" style="font-size: 1rem; line-height: 1.5">
+            不定期更新，就跟生活中的不確定性一樣
+          </p>
+          <form
+            style="
+              display: flex;
+              gap: 1rem;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <input
+              type="email"
+              id="email"
+              size="30"
+              autocomplete="off"
+              placeholder="example@gmail.com"
+              required
+              style="
+                padding: 1rem;
+                border-radius: 2rem;
+                border: none;
+                outline: none;
+              "
+            />
+            <button
+              style="
+                padding: 0.5rem 2rem;
+                border-radius: 2rem;
+                background: #ecebe6;
+                color: #564734;
+                font-weight: 500;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                font-size: 1.25rem;
+              "
+            >
+              訂閱
+            </button>
+          </form>
         </div>
       </section>
     </main>
