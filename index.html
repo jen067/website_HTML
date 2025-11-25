@@ -18,17 +18,21 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: #ecebe6;
     "
   >
     <!-- Hero 區域 -->
-    <div class="hero" style="position: relative">
-      <img
-        src="./assets/images/hero.png"
-        alt="十一月背景照片"
-        width="1920px"
-        height="800px"
-        style="max-width: 99vw"
-      />
+    <div
+      class="hero"
+      style="
+        width: 100%;
+        height: 800px;
+        position: relative;
+        background-image: url('assets/images/hero.png');
+        background-size: cover;
+        background-position: center;
+      "
+    >
       <h1
         style="
           color: #fff;
@@ -76,15 +80,121 @@
     </header>
 
     <!-- Main 區域 -->
-    <main style="width: 100%; background: #564734; padding: 4rem 2rem">
+    <main style="width: 100%; color: #564734">
       <!-- 本月主題 -->
-      <div class="mainTopic" style="color: #fff">
-        <h2 class="subTitle" style="font-size: 6rem">2021 的今天</h2>
-        <p>
-          2021
-          的今天我與高中同儕一同到河濱公園騎車當時我還很迷戀傻瓜相機的顆粒感，但成本的負擔使我漸漸遠離了底片的世界
-        </p>
-      </div>
+      <section
+        class="mainTopic"
+        style="
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+        "
+      >
+        <div
+          class="mainTopicText"
+          style="flex: 500px; position: relative; left: 4rem"
+        >
+          <h2 class="subTitle" style="font-size: 6rem">2021 的今天</h2>
+          <p
+            class="paragraph"
+            style="font-size: 1.25rem; width: 80%; line-height: 1.5"
+          >
+            2021
+            的11月我與高中同儕一同到河濱公園騎車當時我還很迷戀傻瓜相機的顆粒感，但成本的負擔使我漸漸遠離了底片的世界
+          </p>
+        </div>
+        <div class="mainTopicImg" style="flex: 500px; text-align: center">
+          <img src="./assets/images/hero.png" alt="本月主題圖片" width="80%" />
+        </div>
+      </section>
+      <!-- 本月推薦 -->
+      <section class="recommand">
+        <section
+          class="recommand-movie"
+          style="
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: #b8c8c8;
+          "
+        >
+          <div class="movieImg" style="flex: 500px; text-align: center">
+            <img
+              src="./assets/images/moive.jpg"
+              alt="本月主題圖片"
+              width="40%"
+            />
+          </div>
+          <div class="mainTopicText" style="flex: 500px">
+            <h2 class="subTitle" style="font-size: 6rem">
+              <span style="font-size: 1.25rem; opacity: 0.8">本月電影推薦</span>
+              <br />
+              後窗
+            </h2>
+            <p style="letter-spacing: 0.5rem; font-size: 2rem">★★★★</p>
+            <p
+              class="paragraph"
+              style="font-size: 1.25rem; width: 80%; line-height: 1.5"
+            >
+              Hitchcock
+              經典作品之一，透過一扇窗道出整個凶殺案之懸疑，結局拍攝手法略顯突兀但仍為佳作
+            </p>
+          </div>
+        </section>
+      </section>
+      <section
+        class="recommand-movie"
+        style="
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <div style="flex: 500px; text-align: center">
+          <iframe
+            data-testid="embed-iframe"
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/6s1FrTI6HEieYxcRLjiRVx?utm_source=generator"
+            width="400"
+            height="600"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div class="mainTopicText" style="flex: 500px">
+          <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
+            本月歌單推薦
+          </h3>
+          <ul
+            style="
+              font-size: 1.25rem;
+              width: 80%;
+              display: flex;
+              flex-direction: column;
+              gap: 1.5rem;
+              line-height: 1.5;
+            "
+          >
+            <li>
+              信 — 歷經十年的重製雖書寫角度改變但仍能看出過去與現今的迷惘與成長
+            </li>
+            <li>
+              不哭 —
+              曾經只唱低俗下流歌詞的歌手轉為感受生活的嘻哈詩人，唱腔雖非主流但內容真摯值得一聽
+            </li>
+            <li>
+              阿姆般的生活 —
+              想成為一個負責任的大人一個能陪伴小孩成長的大人，用著有趣的punchline道出他的嘻哈生活
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>
