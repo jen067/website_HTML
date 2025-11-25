@@ -3,7 +3,304 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Jen's Blog</title>
+    <link rel="icon" href="../assets/images/icon.PNG" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        font-family: "Noto Serif TC", serif;
+      }
+
+      p,
+      li {
+        font-weight: 500;
+      }
+    </style>
   </head>
-  <body></body>
+  <body
+    style="
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ecebe6;
+    "
+  >
+    <!-- Hero 區域 -->
+    <div
+      class="hero"
+      style="
+        width: 100%;
+        height: 800px;
+        position: relative;
+        background-image: url('../assets/images/profile-cover.png');
+        background-size: cover;
+        background-position: center;
+      "
+    ></div>
+    <!-- Header 區域 -->
+    <header
+      style="
+        position: absolute;
+        top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        padding: 0.5rem 2rem;
+        font-size: 1.25rem;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(5px);
+        border: 1px solid #fff;
+        border-radius: 50px;
+        color: #564734;
+      "
+    >
+      <div class="logo" style="display: flex; align-items: center">
+        <img src="../assets/images/icon.PNG" alt="網站logo" width="4.5%" />
+        <p class="title" style="font-weight: 600">
+          <a
+            href="../index.html"
+            style="color: #564734; font-weight: 600; text-decoration: none"
+            >宜蓁の部屋</a
+          >
+        </p>
+      </div>
+
+      <nav style="display: flex; gap: 1.5rem; white-space: nowrap">
+        <a href="#" style="color: #564734; font-weight: 600">About Me</a>
+        <a href="./work.html" style="color: #564734; font-weight: 600">Works</a>
+        <a href="./journal.html" style="color: #564734; font-weight: 600"
+          >Dairy</a
+        >
+      </nav>
+    </header>
+    <main style="width: 100%; color: #564734">
+      <!-- 關於我 -->
+      <section
+        class="mainTopic"
+        style="
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+        "
+      >
+        <div
+          class="mainTopicText"
+          style="flex: 45%; position: relative; left: 4rem"
+        >
+          <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
+            關於我
+          </h3>
+          <p
+            class="paragraph"
+            style="
+              font-size: 1.25rem;
+              width: 80%;
+              line-height: 2;
+              letter-spacing: 1px;
+            "
+          >
+            我是<span style="text-decoration: underline">蔡宜蓁</span
+            >目前就讀於台北教育大學，修讀<mark
+              style="
+                background-color: #564734;
+                color: white;
+                padding-inline: 0.5rem;
+              "
+              >數位科技與設計學系</mark
+            >與<mark
+              style="
+                background-color: #564734;
+                color: white;
+                padding-inline: 0.5rem;
+              "
+              >資訊科學系</mark
+            >在設計與資訊之間連滾帶爬的求生中。鏡頭恐懼與社交無感，喜歡小眾與對立的事物人生目標是移居紐西蘭看完
+            IMDB Top 250的所有電影。
+            <span
+              style="
+                opacity: 0.8;
+                font-weight: 600;
+                text-decoration: line-through;
+              "
+              >(雷點很多玻璃心請迴轉)</span
+            >
+          </p>
+        </div>
+        <div class="mainTopicImg" style="flex: 40%; text-align: center">
+          <img
+            src="../assets/images/profile.png"
+            alt="本月主題圖片"
+            width="80%"
+          />
+        </div>
+      </section>
+      <!-- 喜好一覽 -->
+      <section
+        class="mainTopic"
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          background: #97afae;
+          color: white;
+        "
+      >
+        <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
+          喜好一覽
+        </h3>
+        <div
+          class="grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: auto;
+            gap: 1rem;
+            align-items: center;
+          "
+        >
+          <div
+            class="item a"
+            style="
+              grid-column: span 2;
+              height: 200px;
+              background-image: url(../assets/images/t1.jpg);
+              background-size: cover;
+              background-position: top;
+            "
+          ></div>
+          <div
+            class="item b"
+            style="
+              height: 200px;
+              background-image: url(../assets/images/cfo.jpg);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div
+            class="label lol"
+            style="
+              grid-column: 4;
+              font-size: 4rem;
+              font-weight: 600;
+              font-style: italic;
+              justify-self: center;
+            "
+          >
+            LOL
+          </div>
+
+          <div
+            class="label music"
+            style="
+              grid-column: 1;
+              font-size: 4rem;
+              font-weight: 600;
+              font-style: italic;
+              justify-self: center;
+            "
+          >
+            Music
+          </div>
+          <div
+            class="item c"
+            style="
+              height: 200px;
+              background-image: url(../assets/images/macmiller.jpg);
+              background-size: cover;
+              background-position: center;
+              grid-column: 2;
+            "
+          ></div>
+          <div
+            class="item d"
+            style="
+              height: 200px;
+              background-image: url(../assets/images/tyler.jpg);
+              background-size: cover;
+              background-position: center;
+              grid-column: 3;
+            "
+          ></div>
+          <div
+            class="item e"
+            style="
+              height: 200px;
+              background-image: url(../assets/images/yitai.jpg);
+              background-size: cover;
+              background-position: center;
+              grid-column: 4;
+            "
+          ></div>
+
+          <div
+            class="item f"
+            style="
+              grid-column: 1 / span 2;
+              height: 200px;
+              background-image: url(../assets/images/backtofuture.jpg);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div
+            class="label movie"
+            style="
+              grid-column: 3;
+              font-size: 4rem;
+              font-weight: 600;
+              font-style: italic;
+              justify-self: center;
+            "
+          >
+            Movie
+          </div>
+          <div
+            class="item g"
+            style="
+              grid-column: 4;
+              height: 200px;
+              background-image: url(../assets/images/fightclub.jpg);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+        </div>
+      </section>
+      <!-- 經歷 -->
+      <section
+        class="experience"
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          align-items: center;
+
+          min-height: 100vh;
+        "
+      >
+        <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
+          經歷一覽
+        </h3>
+      </section>
+    </main>
+  </body>
 </html>
