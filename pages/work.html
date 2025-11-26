@@ -3,7 +3,226 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Jen's Blog</title>
+    <link rel="icon" href="../assets/images/icon.PNG" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #564734;
+        font-weight: 600;
+      }
+      html,
+      body {
+        font-family: "Noto Serif TC", serif;
+      }
+    </style>
   </head>
-  <body></body>
+  <body
+    style="
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    "
+  >
+    <!-- Hero 區域 -->
+    <div
+      class="hero"
+      style="
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding-block: 1rem;
+      "
+    >
+      <h1>My Gallery</h1>
+      <div
+        class="container"
+        style="
+          width: 1000px;
+          height: 500px;
+          background-image: url('../assets/images/work-cover.png');
+          background-size: cover;
+        "
+      ></div>
+      <p>色彩學 - 鯨</p>
+    </div>
+    <!-- Header 區域 -->
+    <header
+      style="
+        position: absolute;
+        top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        max-width: 1200px;
+      "
+    >
+      <div class="logo" style="display: flex; align-items: center">
+        <img src="../assets/images/icon.PNG" alt="網站logo" width="45px" />
+        <a href="../index.html" style="text-decoration: none">宜蓁の部屋</a>
+      </div>
+
+      <nav style="display: flex; gap: 1.5rem; white-space: nowrap">
+        <a href="./profile.html">About Me</a>
+        <a href="#">Works</a>
+        <a href="./journal.html">Dairy</a>
+      </nav>
+    </header>
+    <main style="width: 100%">
+      <section
+        class="design logo"
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          width: 80%;
+          min-height: 100vh;
+          margin: auto;
+          max-width: 1000px;
+        "
+      >
+        <h2>Logo Design</h2>
+        <hr />
+        <section
+          class="rhino"
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 4rem;
+          "
+        >
+          <h3
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <div class="left">犀牛犀牛品牌Logo設計</div>
+            <div class="right">/01</div>
+          </h3>
+          <div
+            class="content"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <p>Introduction</p>
+            <p style="width: 40%; text-align: right">
+              結合品牌形象<span style="text-decoration: underline">犀牛</span
+              >與販售主題<span style="text-decoration: underline">茶食</span
+              >作為設計的原型，透過茶壺與茶葉的結合扣合主題並藉由犀牛身軀製造茶壺壺嘴的流線型
+            </p>
+          </div>
+          <div class="image" style="display: flex; gap: 3rem">
+            <img
+              src="../assets/images/rhinoExample.png"
+              alt="犀牛犀牛logo示意圖"
+              style="width: 400px"
+            />
+            <div
+              class="set"
+              style="display: flex; flex-direction: column; gap: 1rem"
+            >
+              <div style="width: 300px; height: 200px">
+                <img
+                  src="../assets/images/rhinoExample2.jpg"
+                  alt="犀牛犀牛logo示意圖"
+                  style="width: 100%"
+                />
+              </div>
+              <div
+                style="width: 300px; height: 84px; background: #5c8bc9"
+              ></div>
+            </div>
+            <small style="align-self: flex-end">
+              2024 <br />
+              犀牛犀牛茶食文化Logo設計<br />蔡宜蓁
+            </small>
+          </div>
+        </section>
+        <section
+          class="rhino"
+          style="display: flex; flex-direction: column; gap: 1rem"
+        >
+          <h3
+            style="
+              display: flex;
+              flex-direction: row-reverse;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <div class="left">數位系系服圖像徵稿</div>
+            <div class="right">/02</div>
+          </h3>
+          <div
+            class="content"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <p>Introduction</p>
+            <p style="width: 40%; text-align: right">
+              結合數位系概念<span style="text-decoration: underline"
+                >數位科技</span
+              >與<span style="text-decoration: underline">美術設計</span
+              >以簡約流暢的線條與配色呈現新鮮活潑的特質
+            </p>
+          </div>
+          <div
+            class="image"
+            style="
+              display: flex;
+              gap: 3rem;
+              justify-content: center;
+              margin-top: 2rem;
+            "
+          >
+            <img
+              src="../assets/images/cloth.png"
+              alt="系服圖樣設計"
+              style="width: 300px"
+            />
+            <small style="align-self: flex-end">
+              2025 <br />
+              數位系系服圖樣設計<br />蔡宜蓁
+            </small>
+          </div>
+        </section>
+      </section>
+    </main>
+    <hr style="width: 100%; margin-top: 4rem" />
+    <footer
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding-block: 1rem;
+      "
+    >
+      <img src="../assets/images/icon.PNG" alt="網站logo" width="50px" />
+      <p>聯絡我：s111219043@stu,ntue.edu.tw</p>
+    </footer>
+  </body>
 </html>

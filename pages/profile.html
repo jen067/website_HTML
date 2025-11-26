@@ -16,15 +16,12 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        color: #564734;
+        font-weight: 600;
       }
       html,
       body {
         font-family: "Noto Serif TC", serif;
-      }
-
-      p,
-      li {
-        font-weight: 500;
       }
     </style>
   </head>
@@ -34,7 +31,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: #ecebe6;
     "
   >
     <!-- Hero 區域 -->
@@ -58,35 +54,21 @@
         justify-content: space-between;
         align-items: center;
         width: 80%;
-        padding: 0.5rem 2rem;
-        font-size: 1.25rem;
-        background: rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(5px);
-        border: 1px solid #fff;
-        border-radius: 50px;
-        color: #564734;
+        max-width: 1200px;
       "
     >
       <div class="logo" style="display: flex; align-items: center">
-        <img src="../assets/images/icon.PNG" alt="網站logo" width="4.5%" />
-        <p class="title" style="font-weight: 600">
-          <a
-            href="../index.html"
-            style="color: #564734; font-weight: 600; text-decoration: none"
-            >宜蓁の部屋</a
-          >
-        </p>
+        <img src="../assets/images/icon.PNG" alt="網站logo" width="45px" />
+        <a href="../index.html" style="text-decoration: none">宜蓁の部屋</a>
       </div>
 
       <nav style="display: flex; gap: 1.5rem; white-space: nowrap">
-        <a href="#" style="color: #564734; font-weight: 600">About Me</a>
-        <a href="./work.html" style="color: #564734; font-weight: 600">Works</a>
-        <a href="./journal.html" style="color: #564734; font-weight: 600"
-          >Dairy</a
-        >
+        <a href="#">About Me</a>
+        <a href="./work.html">Works</a>
+        <a href="./journal.html">Dairy</a>
       </nav>
     </header>
-    <main style="width: 100%; color: #564734">
+    <main style="width: 100%">
       <!-- 關於我 -->
       <section
         class="profile"
@@ -99,21 +81,18 @@
         "
       >
         <div
-          class="profileText"
-          style="flex: 45%; position: relative; left: 4rem"
+          class="content"
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            flex: 45%;
+            position: relative;
+            left: 4rem;
+          "
         >
-          <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
-            關於我
-          </h3>
-          <p
-            class="paragraph"
-            style="
-              font-size: 1.25rem;
-              width: 80%;
-              line-height: 2;
-              letter-spacing: 1px;
-            "
-          >
+          <h2>關於我</h2>
+          <p style="width: 80%">
             我是<span style="text-decoration: underline">蔡宜蓁</span
             >目前就讀於台北教育大學，修讀<mark
               style="
@@ -131,12 +110,7 @@
               >資訊科學系</mark
             >在設計與資訊之間連滾帶爬的求生中。鏡頭恐懼與社交無感，喜歡小眾與對立的事物人生目標是移居紐西蘭看完
             IMDB Top 250的所有電影。
-            <span
-              style="
-                opacity: 0.8;
-                font-weight: 600;
-                text-decoration: line-through;
-              "
+            <span style="text-decoration: line-through"
               >(雷點很多玻璃心請迴轉)</span
             >
           </p>
@@ -144,7 +118,7 @@
         <div class="profileImg" style="flex: 40%; text-align: center">
           <img
             src="../assets/images/profile.png"
-            alt="本月主題圖片"
+            alt="個人代表物"
             width="80%"
           />
         </div>
@@ -159,14 +133,10 @@
           align-items: center;
           justify-content: center;
           min-height: 100vh;
-          background: #97afae;
-          color: white;
           padding-block: 4rem;
         "
       >
-        <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
-          喜好一覽
-        </h3>
+        <h2 style="margin-bottom: 1rem">喜好一覽</h2>
         <div
           class="grid"
           style="
@@ -196,29 +166,11 @@
               background-position: center;
             "
           ></div>
-          <div
-            class="label lol"
-            style="
-              grid-column: 4;
-              font-size: 4rem;
-              font-weight: 600;
-              font-style: italic;
-              justify-self: center;
-            "
-          >
+          <div class="label lol" style="grid-column: 4; justify-self: center">
             LOL
           </div>
 
-          <div
-            class="label music"
-            style="
-              grid-column: 1;
-              font-size: 4rem;
-              font-weight: 600;
-              font-style: italic;
-              justify-self: center;
-            "
-          >
+          <div class="label music" style="grid-column: 1; justify-self: center">
             Music
           </div>
           <div
@@ -262,16 +214,7 @@
               background-position: center;
             "
           ></div>
-          <div
-            class="label movie"
-            style="
-              grid-column: 3;
-              font-size: 4rem;
-              font-weight: 600;
-              font-style: italic;
-              justify-self: center;
-            "
-          >
+          <div class="label movie" style="grid-column: 3; justify-self: center">
             Movie
           </div>
           <div
@@ -298,9 +241,7 @@
           padding-block: 2rem;
         "
       >
-        <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
-          經歷一覽
-        </h3>
+        <h2 style="margin-bottom: 1rem">經歷一覽</h2>
         <div
           class="timeline"
           style="
@@ -346,9 +287,7 @@
                 class="text"
                 style="position: absolute; left: -500px; min-width: 250px"
               >
-                <h3 class="year" style="font-size: 2rem; margin-bottom: 1rem">
-                  2023
-                </h3>
+                <h2 class="year" style="margin-bottom: 1rem">2023</h2>
                 <ul
                   style="
                     display: flex;
@@ -364,7 +303,6 @@
                       style="
                         display: inline-block;
                         text-decoration: underline;
-                        font-weight: 800;
                         margin-inline: 0.5rem;
                       "
                       >數位科技與設計學系</span
@@ -398,7 +336,7 @@
                   width: 27.5px;
                   height: 27.5px;
                   border: 5px solid #564734;
-                  background-color: #ecebe6;
+                  background-color: #fff;
                   border-radius: 50%;
                   position: absolute;
                   left: -12.5px;
@@ -409,9 +347,7 @@
                 class="text"
                 style="position: absolute; left: 65px; min-width: 400px"
               >
-                <h3 class="year" style="font-size: 2rem; margin-bottom: 1rem">
-                  2024
-                </h3>
+                <h2 class="year" style="margin-bottom: 1rem">2024</h2>
                 <ul
                   style="
                     display: flex;
@@ -426,7 +362,6 @@
                       style="
                         display: inline-block;
                         text-decoration: underline;
-                        font-weight: 800;
                         margin-inline: 0.5rem;
                       "
                       >資訊科學系</span
@@ -437,7 +372,6 @@
                       style="
                         display: inline-block;
                         text-decoration: underline;
-                        font-weight: 800;
                         margin-inline: 0.5rem;
                       "
                       >犀牛犀牛茶食文化 Logo 設計</span
@@ -473,9 +407,7 @@
                 class="text"
                 style="position: absolute; left: -500px; min-width: 250px"
               >
-                <h3 class="year" style="font-size: 2rem; margin-bottom: 1rem">
-                  2025
-                </h3>
+                <h2 class="year" style="margin-bottom: 1rem">2025</h2>
                 <ul
                   style="
                     display: flex;
@@ -490,7 +422,6 @@
                       style="
                         display: inline-block;
                         text-decoration: underline;
-                        font-weight: 800;
                         margin-inline: 0.5rem;
                       "
                       >藍光的戰鬥試煉桌遊設計比賽</span
@@ -498,7 +429,6 @@
                       style="
                         display: inline-block;
                         text-decoration: underline;
-                        font-weight: 800;
                         margin-inline-start: 0.5rem;
                       "
                       >第一名</span
@@ -510,7 +440,6 @@
                       style="
                         display: inline-block;
                         text-decoration: underline;
-                        font-weight: 800;
                         margin-inline: 0.5rem;
                       "
                       >Line Fresh 2025 校園競賽</span
@@ -544,13 +473,10 @@
           align-items: center;
           justify-content: center;
           min-height: 100vh;
-          color: #564734;
           padding-block: 4rem;
         "
       >
-        <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
-          技能
-        </h3>
+        <h2>技能</h2>
         <div
           class="grid"
           style="
@@ -559,25 +485,23 @@
             grid-template-rows: repeat(2, 1fr);
             grid-template-rows: auto;
             gap: 4rem;
-
             justify-content: center;
           "
         >
           <div class="card">
-            <h3
+            <h2
               style="
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: 1.5rem;
                 padding-bottom: 1rem;
                 margin-bottom: 1rem;
                 border-bottom: 1px solid #564734;
               "
             >
               C/C++/C#
-              <span style="font-size: 1rem; letter-spacing: 5px">★★★</span>
-            </h3>
+              <span>★★★</span>
+            </h2>
             <ul
               style="
                 position: relative;
@@ -592,20 +516,19 @@
             </ul>
           </div>
           <div class="card">
-            <h3
+            <h2
               style="
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: 1.5rem;
                 padding-bottom: 1rem;
                 margin-bottom: 1rem;
                 border-bottom: 1px solid #564734;
               "
             >
               網頁前端
-              <span style="font-size: 1rem; letter-spacing: 5px">★★★</span>
-            </h3>
+              <span>★★★</span>
+            </h2>
             <ul
               style="
                 position: relative;
@@ -622,20 +545,19 @@
             </ul>
           </div>
           <div class="card">
-            <h3
+            <h2
               style="
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: 1.5rem;
                 padding-bottom: 1rem;
                 margin-bottom: 1rem;
                 border-bottom: 1px solid #564734;
               "
             >
               UI、UX
-              <span style="font-size: 1rem; letter-spacing: 5px">★★★</span>
-            </h3>
+              <span>★★★</span>
+            </h2>
             <ul
               style="
                 position: relative;
@@ -649,20 +571,19 @@
             </ul>
           </div>
           <div class="card">
-            <h3
+            <h2
               style="
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: 1.5rem;
                 padding-bottom: 1rem;
                 margin-bottom: 1rem;
                 border-bottom: 1px solid #564734;
               "
             >
               平面設計
-              <span style="font-size: 1rem; letter-spacing: 5px">★★★</span>
-            </h3>
+              <span>★★★</span>
+            </h2>
             <ul
               style="
                 position: relative;
@@ -678,20 +599,19 @@
             </ul>
           </div>
           <div class="card">
-            <h3
+            <h2
               style="
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: 1.5rem;
                 padding-bottom: 1rem;
                 margin-bottom: 1rem;
                 border-bottom: 1px solid #564734;
               "
             >
               企劃撰寫
-              <span style="font-size: 1rem; letter-spacing: 5px">★★★★★</span>
-            </h3>
+              <span>★★★★★</span>
+            </h2>
             <ul
               style="
                 position: relative;
@@ -707,20 +627,19 @@
             </ul>
           </div>
           <div class="card">
-            <h3
+            <h2
               style="
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: 1.5rem;
                 padding-bottom: 1rem;
                 margin-bottom: 1rem;
                 border-bottom: 1px solid #564734;
               "
             >
               電繪
-              <span style="font-size: 1rem; letter-spacing: 5px">★★★</span>
-            </h3>
+              <span>★★★</span>
+            </h2>
             <ul
               style="
                 position: relative;
@@ -737,23 +656,18 @@
         </div>
       </section>
     </main>
+    <hr style="width: 100%" />
     <footer
       style="
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        margin-top: 1rem;
         padding-block: 1rem;
-        border-top: 2px solid rgba(86, 71, 52, 0.2);
-        width: 100%;
-        color: #564734;
       "
     >
-      <img src="../assets/images/icon.PNG" alt="" width="50px" />
-      <p class="paragraph" style="font-size: 1rem; line-height: 1.5">
-        聯絡我：s111219043@stu,ntue.edu.tw
-      </p>
+      <img src="../assets/images/icon.PNG" alt="網站logo" width="50px" />
+      <p>聯絡我：s111219043@stu,ntue.edu.tw</p>
     </footer>
   </body>
 </html>
