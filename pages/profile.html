@@ -89,7 +89,7 @@
     <main style="width: 100%; color: #564734">
       <!-- 關於我 -->
       <section
-        class="mainTopic"
+        class="profile"
         style="
           display: flex;
           gap: 1rem;
@@ -99,7 +99,7 @@
         "
       >
         <div
-          class="mainTopicText"
+          class="profileText"
           style="flex: 45%; position: relative; left: 4rem"
         >
           <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
@@ -141,7 +141,7 @@
             >
           </p>
         </div>
-        <div class="mainTopicImg" style="flex: 40%; text-align: center">
+        <div class="profileImg" style="flex: 40%; text-align: center">
           <img
             src="../assets/images/profile.png"
             alt="本月主題圖片"
@@ -151,7 +151,7 @@
       </section>
       <!-- 喜好一覽 -->
       <section
-        class="mainTopic"
+        class="interest"
         style="
           display: flex;
           flex-direction: column;
@@ -161,6 +161,7 @@
           min-height: 100vh;
           background: #97afae;
           color: white;
+          padding-block: 4rem;
         "
       >
         <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
@@ -293,13 +294,273 @@
           flex-direction: column;
           gap: 1rem;
           align-items: center;
-
           min-height: 100vh;
+          padding-block: 2rem;
         "
       >
         <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
           經歷一覽
         </h3>
+        <div
+          class="timeline"
+          style="
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <div
+            class="line"
+            style="
+              width: 1.6px;
+              min-height: 100vh;
+              background-color: #564734;
+              position: relative;
+            "
+          >
+            <div
+              class="incident"
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                position: relative;
+                top: 50px;
+                text-align: right;
+              "
+            >
+              <div
+                class="circle"
+                style="
+                  width: 25px;
+                  height: 25px;
+                  background: #564734;
+                  border-radius: 50%;
+                  position: absolute;
+                  left: -12.5px;
+                  top: 45px;
+                "
+              ></div>
+              <div
+                class="text"
+                style="position: absolute; left: -500px; min-width: 250px"
+              >
+                <h3 class="year" style="font-size: 2rem; margin-bottom: 1rem">
+                  2023
+                </h3>
+                <ul
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    position: relative;
+                    list-style: none;
+                  "
+                >
+                  <li>
+                    <span style="margin-right: 0.5rem">● </span>金陵女中畢業 →
+                    台北教育大學<span
+                      style="
+                        display: inline-block;
+                        text-decoration: underline;
+                        font-weight: 800;
+                        margin-inline: 0.5rem;
+                      "
+                      >數位科技與設計學系</span
+                    >就讀
+                  </li>
+                  <li>
+                    <span style="margin-right: 0.5rem">● </span>C.W.T
+                    同人誌暑期展覽工讀
+                  </li>
+                  <li>
+                    <span style="margin-right: 0.5rem">● </span>
+                    參與數位系美術股
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="incident"
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                position: relative;
+                top: 250px;
+                min-width: 250px;
+              "
+            >
+              <div
+                class="circle"
+                style="
+                  width: 27.5px;
+                  height: 27.5px;
+                  border: 5px solid #564734;
+                  background-color: #ecebe6;
+                  border-radius: 50%;
+                  position: absolute;
+                  left: -12.5px;
+                  top: 45px;
+                "
+              ></div>
+              <div
+                class="text"
+                style="position: absolute; left: 65px; min-width: 400px"
+              >
+                <h3 class="year" style="font-size: 2rem; margin-bottom: 1rem">
+                  2024
+                </h3>
+                <ul
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    position: relative;
+                    list-style: none;
+                  "
+                >
+                  <li>
+                    <span style="margin-right: 0.5rem">● </span>輔系<span
+                      style="
+                        display: inline-block;
+                        text-decoration: underline;
+                        font-weight: 800;
+                        margin-inline: 0.5rem;
+                      "
+                      >資訊科學系</span
+                    >
+                  </li>
+                  <li>
+                    <span style="margin-right: 0.5rem">● </span>參與<span
+                      style="
+                        display: inline-block;
+                        text-decoration: underline;
+                        font-weight: 800;
+                        margin-inline: 0.5rem;
+                      "
+                      >犀牛犀牛茶食文化 Logo 設計</span
+                    >徵稿
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="incident"
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                position: relative;
+                top: 450px;
+                text-align: right;
+              "
+            >
+              <div
+                class="circle"
+                style="
+                  width: 25px;
+                  height: 25px;
+                  background: #564734;
+                  border-radius: 50%;
+                  position: absolute;
+                  left: -12.5px;
+                  top: 45px;
+                "
+              ></div>
+              <div
+                class="text"
+                style="position: absolute; left: -500px; min-width: 250px"
+              >
+                <h3 class="year" style="font-size: 2rem; margin-bottom: 1rem">
+                  2025
+                </h3>
+                <ul
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    position: relative;
+                    list-style: none;
+                  "
+                >
+                  <li>
+                    <span style="margin-right: 0.5rem">● </span>參與<span
+                      style="
+                        display: inline-block;
+                        text-decoration: underline;
+                        font-weight: 800;
+                        margin-inline: 0.5rem;
+                      "
+                      >藍光的戰鬥試煉桌遊設計比賽</span
+                    >榮獲<span
+                      style="
+                        display: inline-block;
+                        text-decoration: underline;
+                        font-weight: 800;
+                        margin-inline-start: 0.5rem;
+                      "
+                      >第一名</span
+                    >
+                  </li>
+                  <li>
+                    <span style="margin-right: 0.5rem">● </span
+                    ><span
+                      style="
+                        display: inline-block;
+                        text-decoration: underline;
+                        font-weight: 800;
+                        margin-inline: 0.5rem;
+                      "
+                      >Line Fresh 2025 校園競賽</span
+                    >- 設計幸福感解方，複賽入選
+                  </li>
+                  <li>
+                    <span style="margin-right: 0.5rem">● </span
+                    >參與數位系系服徵稿比賽
+                  </li>
+                  <li>
+                    <span style="margin-right: 0.5rem">● </span
+                    >擔任善牧文理安親班兼職課輔
+                  </li>
+                  <li>
+                    <span style="margin-right: 0.5rem">● </span
+                    >參與校務系統軟體設計讀書會
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 技能 -->
+      <section
+        class="skill"
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          color: #564734;
+          padding-block: 4rem;
+        "
+      >
+        <h3 class="subTitle" style="font-size: 3rem; margin-bottom: 1rem">
+          技能
+        </h3>
+        <div
+          class="grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: auto;
+            gap: 1rem;
+            align-items: center;
+          "
+        ></div>
       </section>
     </main>
   </body>
